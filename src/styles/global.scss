@@ -1,9 +1,7 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -11,6 +9,31 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+:root {
+  --background: #18191a;
+  --input-color: #e4e6eb;
+  --facebook-blue-05: #ecf3ff;
+  --facebook-blue-30: #aac9ff;
+  --facebook-blue-40: #77a7ff;
+  --facebook-blue-60: #1877f2;
+  --facebook-blue-70: #2851a3;
+  --facebook-blue-80: #1d3c78;
+  --facebook-comment-background: #f2f3f5;
+  --facebook-gray-35: #cccccc;
+  --facebook-gray-50: #828282;
+  --facebook-gray-70: #4a4a4a;
+  --facebook-gray-80: #373737;
+  --facebook-gray-90: #282828;
+  --icon-color: #b0b3b8;
+}
+
+input,
+textarea,
+button {
+  color: var(--input-color);
+}
+
+body {
+  background: var(--background);
+  font-family: Nunito, sans-serif;
 }
