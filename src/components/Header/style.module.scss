@@ -9,7 +9,7 @@
 
   header {
     display: flex;
-    padding: 0.2rem 2rem;
+    padding: 0.2rem 0.8rem;
 
     align-items: center;
     img {
@@ -36,7 +36,7 @@
       }
       > img {
         position: absolute;
-        width: 28px;
+        width: 25px;
         top: -2px;
         left: 0;
         transform: translateX(100%);
@@ -55,7 +55,8 @@
     gap: 20px;
 
     a {
-      padding: 0.2rem 3rem;
+      flex: 1;
+      padding: 0.2rem 0;
       border-radius: 0.4rem;
       transition: background 0.2s;
       display: flex;
@@ -75,7 +76,7 @@
 }
 
 .userInfo {
-  padding-right: 2rem;
+  padding-right: 0.8rem;
 
   display: flex;
   justify-content: flex-end;
@@ -101,6 +102,33 @@
 
     &:hover {
       background: rgba(255, 255, 255, 0.233);
+    }
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 1rem;
+
+    > a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #3a3b3c;
+      transition: filter 0.2s;
+    }
+
+    > a img {
+      width: 18px;
+      height: 18px;
+    }
+
+    > a:hover {
+      filter: brightness(1.2);
     }
   }
 }

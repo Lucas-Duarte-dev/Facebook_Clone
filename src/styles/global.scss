@@ -11,7 +11,7 @@ a {
 
 :root {
   --background: #18191a;
-  --input-color: #e4e6eb;
+  --text-color: #e4e6eb;
   --facebook-blue-05: #ecf3ff;
   --facebook-blue-30: #aac9ff;
   --facebook-blue-40: #77a7ff;
@@ -30,7 +30,7 @@ a {
 input,
 textarea,
 button {
-  color: var(--input-color);
+  color: var(--text-color);
 }
 
 body {

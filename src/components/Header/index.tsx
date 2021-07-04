@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable @next/next/no-img-element */
 import styles from "./style.module.scss";
 
 export function Header() {
@@ -29,6 +31,17 @@ export function Header() {
           />
           <span>Lucas</span>
         </section>
+        <div>
+          <a href="">
+            <img src="/icons/menu.svg" alt="Menu" />
+          </a>
+          <a href="">
+            <img src="/icons/messenger.svg" alt="Messenger" />
+          </a>
+          <a href="">
+            <img src="/icons/notification.svg" alt="Notification" />
+          </a>
+        </div>
       </div>
     </div>
   );

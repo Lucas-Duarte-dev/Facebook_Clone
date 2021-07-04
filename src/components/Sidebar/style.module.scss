@@ -1,0 +1,33 @@
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  padding: 1rem 0.5rem;
+}
+
+.optionsForUser {
+  > div {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.1s;
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.7rem;
+    & + div {
+      margin-top: 0.7rem;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.137);
+    }
+
+    > img {
+      width: 40px;
+      height: 40px;
+      margin-right: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+}

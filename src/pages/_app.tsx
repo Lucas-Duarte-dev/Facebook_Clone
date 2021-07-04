@@ -1,12 +1,17 @@
 import { Header } from "../components/Header";
+import { Sidebar } from "../components/Sidebar";
 
 import "../styles/global.scss";
+import styles from "../styles/app.module.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div className={styles.appContainer}>
       <Header />
-      <Component {...pageProps} />
+      <section>
+        <Sidebar />
+        <Component {...pageProps} />
+      </section>
     </div>
   );
 }
