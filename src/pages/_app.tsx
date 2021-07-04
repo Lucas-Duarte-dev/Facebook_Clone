@@ -3,6 +3,7 @@ import { Sidebar } from "../components/Sidebar";
 
 import "../styles/global.scss";
 import styles from "../styles/app.module.scss";
+import { Contact } from "../components/Contact";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }) {
       <section>
         <Sidebar />
         <Component {...pageProps} />
+        <Contact />
       </section>
     </div>
   );
