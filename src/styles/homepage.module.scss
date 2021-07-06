@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.storysContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 14rem;
+  gap: 0.8rem;
+
+  > div:nth-child(1) {
+    background-color: var(--facebook-gray-90);
+    border-radius: 0.7rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-width: 7rem;
+    > img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+    }
+
+    > div {
+      position: absolute;
+
+      top: calc(14rem - 40%);
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--facebook-blue-60);
+      border: 4px solid var(--facebook-gray-90);
+      > img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    > span {
+      padding: 1rem 0;
+
+      text-align: center;
+      color: var(--text-color);
+      font-weight: 700;
+    }
+  }
+}
