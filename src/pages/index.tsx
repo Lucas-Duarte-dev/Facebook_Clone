@@ -56,6 +56,23 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <div className={styles.postContainer}>
+        <article>
+          <header>
+            <div>
+              <img
+                src="https://avatars.githubusercontent.com/u/66844060?v=4"
+                alt="user"
+              />
+              <section>
+                <p>Lucas Duarte</p>
+                <span>3 min &#127760;</span>
+              </section>
+            </div>
+          </header>
+        </article>
+      </div>
     </div>
   );
 }

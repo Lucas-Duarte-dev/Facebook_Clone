@@ -2,7 +2,11 @@
   width: 100vw;
   height: 3.7rem;
   background: var(--facebook-gray-90);
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
   align-items: center;

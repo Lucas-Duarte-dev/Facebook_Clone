@@ -1,11 +1,14 @@
 .contactContainer {
   width: 25rem;
+  margin-top: 4rem;
   height: 100%;
   overflow-y: auto;
   padding: 0 0.8rem 1rem 0.8rem;
   display: flex;
   flex-direction: column;
   justify-self: flex-end;
+  position: fixed;
+  right: 0;
 
   > section {
     display: flex;
